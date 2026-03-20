@@ -1,0 +1,385 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(90deg, #ff6f61, #de3c4b);
+    padding: 10px 0;
+}
+
+.navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700 !important;
+}
+
+.btn-outline-light {
+    border-color: white;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: #de3c4b;
+}
+
+.btn-primary {
+    background-color: #ffd700;
+    border-color: #ffd700;
+    color: black;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+}
+
+
+.hero-content {
+    padding: 30px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Popular Items Section */
+.popular-items {
+    background: linear-gradient(135deg, #ff6f61, #de3c4b);
+    padding: 50px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 30px;
+}
+
+.popular-items h2 {
+    color: #ffd700;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.popular-items .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.popular-items img {
+    border-radius: 10px;
+}
+
+/* Customer Reviews Section */
+.customer-reviews {
+    background: linear-gradient(135deg, #d7d6d8, #d3d7de);
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.customer-reviews h2 {
+    color: #ffd700;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.review-card {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.review-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.star-rating {
+    color: #ffd700;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.customer-reviews p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer Section */
+.footer {
+    background: #242323;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #ffd700;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: #ffd700;
+}
+
+/* Copyright */
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    .popular-items h2 {
+        font-size: 2rem;
+    }
+    
+    .card-body {
+        padding: 15px;
+    }
+}
+.badge {
+    font-size: 0.75rem;
+    margin-left: 5px;
+    padding: 0.4em 0.6em;
+    vertical-align: right;
+}
+.pagination .page-link {
+    color: #00796b;
+    font-weight: 500;
+    border-radius: 10px !important;
+    margin: 0 5px;
+    transition: 0.3s;
+  }
+
+  .pagination .page-link:hover {
+    background-color: #00796b;
+    color: white;
+  }
+
+  .pagination .active .page-link {
+    background-color: #00796b;
+    border-color: #00796b;
+    color: white; 
+  }
+  /* Hover effect for product cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Hover effect for BUY NOW buttons */
+  .card .btn-primary {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .card .btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  /* Hover effect for navbar links */
+  .navbar-nav .nav-link {
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #0d6efd;
+  }
+  
+  .dropdown-toggle {
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 12px;
+  }
+  
+  .dropdown-menu {
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer social icons hover */
+  .social-icons a {
+    color: #555;
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.3s;
+    font-size: 1.3rem;
+  }
+  
+  .social-icons a:hover {
+    color: #0d6efd;
+    transform: scale(1.2);
+  }
+  
+  /* Review card hover */
+  .review-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .review-card:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+  }
+  /* Carousel Styles for Hero Section */
+.carousel {
+    position: relative;
+    z-index: 1;
+}
+
+.carousel-inner {
+    height: 55vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.carousel-caption {
+    bottom: 20%;
+    z-index: 10;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-caption h5 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}
+
+/* Equal height for all cards in product grid */
+.popular-items .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.popular-items .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.popular-items .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Shop</title>
+    <link href="./bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylee.css">
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">  
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+    </script>   
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand align-items-center">
+                <img src="./images/ffddrr.jpg " alt="Logo">
+                <span>FDR Communication</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="ca1" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="ca1">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index1.html" data-bs-toggle="tooltip" title="Go to Home Page">
+                            <i class="fa-solid fa-house"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page2.html" data-bs-toggle="tooltip" title="Browse our Products">
+                            <i class="fa-solid fa-computer"></i> Products
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page3.html" data-bs-toggle="tooltip" title="Contact Us for Queries">
+                            <i class="fa-solid fa-phone"></i> Contact Us
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="text-center">
+                <a href="login.html" class="btn btn-outline-light me-2"><i class="fa-solid fa-user-tie"></i>   Login</a>
+                <a href="signup.html" class="btn btn-primary"><i class="fa-solid fa-user-plus"></i>   Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/hero.jpg" class="d-block w-100" alt="Smartphones">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Latest Smartphones</h5>
+                        <p>Explore the latest and most advanced smartphones at unbeatable prices.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/office.jpg" class="d-block w-100" alt="Accessories">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Top Accessories</h5>
+                        <p>Check out the best accessories to complement your gadgets.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/drone.jpg" class="d-block w-100" alt="Offers">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Exclusive Offers</h5>
+                        <p>Grab exclusive offers and discounts on your favorite products.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="popular-items container my-5">
+        <h2 class="text-center mb-4">Popular Items</h2>
+        <div class="row text-center">
+            <div class="col-md-4 d-flex">
+                <div class="card">
+                    <img src="./images/Zeb-Blast-Z-pic1.webp" class="card-img-top img-fluid" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">HeadPhone
+                            <span class="badge bg-success">Best seller</span>
+                            <span class="badge bg-danger">20% OFF</span>
+                        </h5>
+                        <p class="card-text">Rs 1999.99</p>
+                        <button class="btn btn-primary"><a href="buynow.html">BUY NOW</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex">
+                <div class="card">
+                    <img src="./images/charger.jpg" class="card-img-top img-fluid" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Charger
+                            <span class="badge bg-secondary">Fdr's Choice</span>
+                            <span class="badge bg-info">10% OFF</span>
+                        </h5>
+                        <p class="card-text">Rs 899.99</p>
+                        <button class="btn btn-primary"><a href="buynow.html">BUY NOW</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex">
+                <div class="card">
+                    <img src="./images/powerbank.webp" class="card-img-top img-fluid" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">PowerBank
+                            <span class="badge bg-info">New</span>
+                            <span class="badge bg-success">15% OFF</span>
+                        </h5>
+                        <p class="card-text">Rs 3999.99</p>
+                        <button class="btn btn-primary"><a href="buynow.html ">BUY NOW</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4 mt-3 d-flex">
+                <div class="card">
+                    <img src="./images/cable.jpg" class="card-img-top img-fluid" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Cable
+                            <span class="badge bg-success">Most selling</span>
+                            <span class="badge bg-danger">40% OFF</span>
+                        </h5>
+                        <p class="card-text">Rs 499.99</p>
+                        <button class="btn btn-primary"><a href="buynow.html">BUY NOW</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mt-3 d-flex">
+                <div class="card">
+                    <img src="./images/keyboard.jpg" class="card-img-top img-fluid" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Keyboard
+                            <span class="badge bg-secondary">Best seller</span>
+                            <span class="badge bg-danger">20% OFF</span>
+                        </h5>
+                        <p class="card-text">Rs 2599.99</p>
+                        <button class="btn btn-primary"><a href="buynow.html">BUY NOW</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mt-3 d-flex">
+                <div class="card">
+                    <img src="./images/mouse.jpg" class="card-img-top img-fluid" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Mouse
+                            <span class="badge bg-success">Premimum</span>
+                            <span class="badge bg-info">15% OFF</span>
+                        </h5>
+                        <p class="card-text">Rs 1199.99</p>
+                        <button class="btn btn-primary"><a href="buynow.html">BUY NOW</a></button>
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="Page navigation" class="d-flex justify-content-center mt-4">
+                <ul class="pagination">
+                    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item active"><a class="page-link" href="index1.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="page2.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="page3.html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="page2.html">Next</a></li>
+                </ul>
+            </nav>
+    </section>
+
+    <section class="customer-reviews container my-5">
+        <h2 class="text-center mb-4">What Our Customers Say</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="review-card">
+                    <img src="./images/usr1.jpg" alt="Customer 1" class="img-fluid rounded-circle" style="max-width: 100px;">
+                    <h5>Abhi</h5>
+                    <div class="star-rating">★★★★★</div>
+                    <p>"Amazing products! The quality is top-notch, and delivery was super fast."</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="review-card">
+                    <img src="./images/usr2.jpeg" alt="Customer 1" class="img-fluid rounded-circle" style="max-width: 100px;">
+                    <h5>Sumit</h5>
+                    <div class="star-rating">★★★★☆</div>
+                    <p>"Great customer service and affordable prices. Highly recommend!"</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="review-card">
+                    <img src="./images/usr3.png" alt="Customer 1" class="img-fluid rounded-circle" style="max-width: 100px;">
+                    <h5>Karan</h5>
+                    <div class="star-rating">★★★★★</div>
+                    <p>"Best electronics shop ever! I love their collection and discounts."</p>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 class="footer-logo"><i class="fa-solid fa-cart-shopping"></i>Fdr Communication</h4>
+                    <p>Best Electronics at the Best Prices.</p><br>
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item justify-content-center"><a href="index1.html">Home</a></li>
+                        <li class="breadcrumb-item "><a href="page2.html">Products</a></li>
+                        <li class="breadcrumb-item"><a href="page3.html">locations</a></li>
+                    </ol>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p><i class="fa-solid fa-phone"></i> Phone: +91 8278897000</p>
+                    <p><i class="fa-solid fa-envelope"></i> Email: fdrcommunication009.com</p>
+                    <p><i class="fa-solid fa-envelope"></i> Gmail: fdrcomm009@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">© 2025 MyShop. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

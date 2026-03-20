@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | FDR Communication</title>
+    <link href="./bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="signup.css">
+    <script src="signup.js"></script>
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./images/ffddrr.jpg" alt="Logo">
+                <span>FDR Communication</span>
+            </a>
+            <div class="text-center">
+                <a href="login.html" class="btn btn-outline-light">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+    <section class="signup-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card p-4 shadow-sm">
+                        <h2 class="text-center mb-4">Create an Account</h2>
+                        <form action="#" method="POST">
+                            <div class="form-group mb-3">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" id="fullName" class="form-control" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" class="form-control" placeholder="Create a password" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="confirmPassword">Confirm Password</label>
+                                <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm your password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block d-flex align-items-center justify-content-center" id="signup-btn">
+                                <span class="spinner-border spinner-border-sm me-2 d-none" role="status" id="spinner" aria-hidden="true"></span>
+                                <span class="btn-text">Sign Up</span>
+                            </button>
+                        </form>
+                        <p class="text-center text-light mt-3">Already have an account? <a href="login.html">Login here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer mt-5">
+        <div class="container text-center">
+            <p>&copy; 2025 FDR Communication. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
